@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/rqm7zex.css" />
+    <title>My Tea Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- website header -->
+    <h1>Welcome to my tea shop - please select your tea</h1>
+    <div class="productWrapper">
+      <!-- first product-->
+      <div class="product">
+        <h2 class="productTitle">Black Tea</h2>
+
+        <div class="productDescription">A strong tea, very good.</div>
+
+        <span class="productPrise"> Price: 12$ </span>
+
+        <div class="prodectAmaunt">
+          <span>Amaunt:</span>
+          <input type="number" id="firstItemAmaunt" />
+        </div>
+
+        <img class="black-tea-image" src = imges/black_tea.jpg width="250px"
+        alt="black tea image">
+      </div>
+
+      <!-- second product-->
+      <div class="product">
+        <h2 class="productTitle">Green Tea</h2>
+
+        <div class="productDescription">Good for realaxation.</div>
+
+        <span class="productPrise"> Price: 10$ </span>
+
+        <div class="prodectAmaunt">
+          <span>Amaunt:</span>
+          <input type="number" id="secondItemAmaunt" />
+        </div>
+
+        <img class="green-tea-image" src = imges/green_tea.jpg width="250px"
+        alt="green tea image">
+      </div>
+
+      <!-- third product-->
+      <div class="product">
+        <h2 class="productTitle">White Tea</h2>
+
+        <div class="productDescription">For good morning.</div>
+
+        <span class="productPrise"> Price: 14$ </span>
+
+        <div class="prodectAmaunt">
+          <span>Amaunt:</span>
+          <input type="number" id="thirdItemAmaunt" />
+        </div>
+
+        <img class="white-tea-image" src = imges/white_tea.jpg width="250px"
+        alt="white tea image">
+      </div>
+    </div>
+
+    <!--check out button-->
+    <div class="checkOut">
+      <button id="checkOut" type="button">Check Out</button>
+
+      <!--check out message-->
+      <div class="ckeckOutMessage" id="chackOutMessageId">
+        <div>Thank you for buying!</div>
+
+        <!--items amaunt message-->
+        <div>
+          <span>Total amaunt of items:</span>
+          <span id="totalItemsAmauntId"></span>
+        </div>
+
+        <!--price amaunt message-->
+        <div>
+          <span>Total price of items:</span>
+          <span id="totalPriceAmauntId"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
